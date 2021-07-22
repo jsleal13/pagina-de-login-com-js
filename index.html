@@ -4,8 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Grab - Login</title>
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/reset.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet">
   </head>
   <body>
-    
+    <section id="login-bar">
+      <div class="logo">
+        <img src="assets/logo-grab.svg" class="logo-img">
+      </div>
+      <form class="form-login">
+        <div class="form-login-email">
+          <span class="material-icons-outlined">alternate_email</span>
+          <input type="email" class="input-padrao" id="email" name="email">
+          <p id="mensagem-erro" class="invisivel">Por favor, insira um e-mail válido</p>
+        </div>
+        <div class="form-login-senha">
+          <span class="material-icons-outlined">lock</span>
+          <input type="password" class="input-padrao" id="senha" name="senha">
+        </div>
+        <button id="botao-entrar" class="botao-padrao">Entrar</button>
+      </form>
+      <div class="esqueceu-login">
+        <ul>
+          <li>problemas para entrar?</li>
+          <li>clique aqui</li>
+        </ul>
+      </div>
+    </section>
+    <aside class="img-home">
+      <img src="assets/undraw_interview_rmcf.svg" id="imagem-background">
+    </aside>
+    <script src="javascript/index.js"></script>
   </body>
 </html>
